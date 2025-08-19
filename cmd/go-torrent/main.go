@@ -6,10 +6,11 @@ import (
 )
 
 func main() {
-	tf, err := file.Read("/Users/vyacheslav/Documents/cult-of-the-lamb-2022.torrent")
+	tf, hash, err := file.Read("/home/deck/Documents/Cult_of_the_Lamb_....torrent")
 	if err != nil {
 		panic(err)
 	}
 
 	fmt.Println(tf)
+	fmt.Println(hash)
 }
